@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CatalogMovie</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Niken Hastaning Putri</string>
+    <string name="nav_header_subtitle">elfnikenhp@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Search</string>
+    <string name="searchTxt">Search Movie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nowplaying">Now Playing</string>
+    <string name="upcoming">Up Coming</string>
+    <string name="overview">Overview</string>
+    <string name="setting">Setting</string>
+    <string name="texthintresult">We found</string>
+</resources>
