@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.search) {
-            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-            startActivity(mIntent);
+        if (id == R.id.action_settings) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
             return true;
         }
 
@@ -121,6 +121,10 @@ public class MainActivity extends AppCompatActivity
             fragment = new NowPlayingFragment();
         } else if (id == R.id.nav_comingsoon) {
             fragment = new UpComingFragment();
+        }
+        else if (id == R.id.settings) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
         }
 
         if (fragment != null) {

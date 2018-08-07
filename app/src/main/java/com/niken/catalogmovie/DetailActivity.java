@@ -17,7 +17,7 @@ import static com.niken.catalogmovie.controller.AppConfig.BASE_POSTER_URL;
 public class DetailActivity extends AppCompatActivity {
 
     ImageView Poster, backdrop;
-    TextView Tittle, Time, Overview, Rating;
+    TextView Tittle, Time, Overview, Rating, language;
     Toolbar toolbar;
 
     Result results;
@@ -34,6 +34,8 @@ public class DetailActivity extends AppCompatActivity {
         Overview = (TextView) findViewById(R.id.overview);
         Rating = (TextView) findViewById(R.id.rating);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        language = (TextView) findViewById(R.id.language);
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -54,5 +56,6 @@ public class DetailActivity extends AppCompatActivity {
         Time.setText(results.getReleaseDate());
         Overview.setText(results.getOverview());
         Rating.setText(Double.toString(results.getVoteAverage()));
+        language.setText(results.getOriginalLanguage());
     }
 }

@@ -16,6 +16,7 @@ import com.niken.catalogmovie.rest.APICall;
 import com.niken.catalogmovie.rest.APIClient;
 
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -54,8 +55,11 @@ public class NowPlayingFragment extends Fragment {
     }
 
     private void nowPlayingMovie () {
+        String language = "id-ID";
+        if (Locale.getDefault().getLanguage().equals("en"))
+            language = "en-US";
         APICall api = APIClient.getRetrofit().create(APICall.class);
-        Call<MovieModel> call = api.getNowPlaying(API_KEY);
+        Call<MovieModel> call = api.getNowPlaying(API_KEY, language);
 
         call.enqueue(new Callback<MovieModel>() {
             @Override

@@ -7,15 +7,20 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Popular" />
+            android:title="@string/popular" />
         <item
             android:id="@+id/nav_nowplaying"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Now Playing" />
+            android:icon="@drawable/ic_play"
+            android:title="@string/nowplaying" />
         <item
             android:id="@+id/nav_comingsoon"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Coming Soon" />
+            android:title="@string/upcoming" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting"
+            />
     </group>
 
 </menu>
